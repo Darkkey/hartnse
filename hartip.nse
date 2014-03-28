@@ -11,7 +11,7 @@ local nsedebug = require "nsedebug"
 description = [[
 HART-IP slave gateway RTU devices scan NSE script.
 The HART Communications Protocol (Highway Addressable Remote Transducer Protocol) is
-a digital industrial automation protocol. HART is used for communicating betweed master 
+a digital industrial automation protocol. HART is used for communicating between master 
 (i.e. host computer with HART modem, PLC or HART field communicator) and slave (RTU 
 device, Remote Transmitter Unit, like transmitter or actuator). The main task of HART
 is configuring and monitoring state of field devices. HART-IP is a HART protocol lower 
@@ -26,6 +26,7 @@ license = "Same as Nmap--See http://nmap.org/book/man-legal.html"
 categories = {"default", "discovery", "safe"}
 
 portrule = shortport.port_or_service(5094, "hart-ip", {"udp", "tcp"})
+portrule = shortport.port_or_service(20004, "hart-ip", {"udp", "tcp"})
 
 local TIMEOUT = 5000
 
