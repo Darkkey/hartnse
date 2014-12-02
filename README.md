@@ -1,6 +1,8 @@
 hartnse
 =======
 
+<b>UPDATE:</b> repository moved to BitBucket: https://bitbucket.org/dark_k3y/hartnse
+
 HART-IP slave gateway RTU devices scan NSE script.
 The HART Communications Protocol (Highway Addressable Remote Transducer Protocol) is
 a digital industrial automation protocol. HART is used for communicating between master 
